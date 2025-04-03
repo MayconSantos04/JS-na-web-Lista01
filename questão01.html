@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+
+<body>
+
+    <script>
+
+        const numero = prompt("Digite um número: ")
+
+        //Arrow Function
+        //Recebe -> número
+        // Exibir se o número é positivo, negativo ou zero
+
+        const verificaPositivoOuNegativo = (numero) => {
+            //Verificar se o número é positivo, negativo ou zero
+
+            if (numero > 0) {
+                return "Positivo"
+            } else if (numero < 0) {
+                return "Zero"
+
+            }
+
+        }
+
+        const resultado = verificaPositivoOuNegativo(numero)
+
+        alert(`Este número é ${resultado}`)
+
+    </script>
+
+</body>
+
+</html>
