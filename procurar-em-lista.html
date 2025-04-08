@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurar em lista</title>
+</head>
+
+<body>
+
+    <script>
+
+        // const pets = [
+        //     "Cachorro", "Gato", "Hamster"
+        // ]
+
+        // alert(pets.includes("Gato"))
+        // //pets.includes volta true ou false se existir ou não dentro da lista
+
+        // pets.indexOf("Gato")
+        // // pets.indexOf() retorna aposição de cada posição da lista
+
+        // alert(pets.indexOf("Gato"))
+
+        const alunos = ['joão', 'juliana', 'caio', 'ana']
+        const medias = ['10', '8', '7.5', '9']
+        const alunosMedias = [alunos, medias]
+
+        // alert(
+        //     `A aluna da posição 1 da lista é: ${alunosMedias[0][1]}
+        //      A nota desssa aluna é ${alunosMedias[1][1]}`
+        // )
+
+        const ExibeNomeENota = function (alunos) {
+            if (alunosMedias([0].includes(alunos))) {
+                // return `${alunosMedias[]}`
+                const indexAluno = alunosMedias[0].indexOf(alunos)
+                const nomeAluno = [indexAluno][0][indexAluno]
+                const mediaAluno = alunosMedias[1][indexAluno]
+
+                return 'Aluno: ${nomeAluno} |  Media ${mediaAluno}'
+
+            } else {
+                return 'Estudante não existe!'
+
+            }
+
+            alert(ExibeNomeENota)
+
+        }
+
+
+    </script>
+
+</body>
+
+
+
+</html>
