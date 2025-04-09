@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+
+<body>
+
+    <script>
+
+        const frutas = ['tomate', 'abacate', 'morango', 'melancia']
+
+        alert(`
+            1 – Adicionar uma fruta no fim da lista
+            2 – Remover a última fruta da lista
+            3 – Exibir a(s) n primeiras frutas
+            4 – Exibir a(s) n últimas frutas
+            5 – Adicionar uma fruta na posição n
+    `
+        )
+
+        const opcao = prompt("Digite uma opção: ")
+
+        switch (opcao) {
+
+            case '1':
+                const novaFruta = prompt("Digite a nova fruta: ")
+                frutas.push(novaFruta)
+                alert(`Lista atualizada: ${frutas}`)
+                break
+            case '2':
+                frutas.pop()
+                alert(`Lista atualizada: ${frutas}`)
+                break
+            case '3':
+                const n = prompt("Digite quantas frutas: ")
+                const nPrimeiras = frutas.slice(0, n)
+                alert(`${n} primeiras: ${nPrimeiras}`)
+                break
+            case '4':
+                const n2 = prompt("Digite quantas frutas: ")
+                const nUltimas = frutas.slice(-n2)
+                alert(`${n2} primeiras: ${nPrimeiras}`)
+                break
+            case '5':
+                const novafruta2 = prompt("Digite a nova fruta: ")
+                const posicao = prompt("Digite a posição a ser adicionada: ")
+                frutas.splice(posicao, 0, novafruta2)
+                break
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

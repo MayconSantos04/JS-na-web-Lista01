@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+
+<body>
+
+    <script>
+
+        const numero1 = prompt("Digite um primeiro número: ")
+        const numero2 = prompt("Digite um segundo número: ")
+
+        const operacao = prompt(`Digite uma operação que deseja usar:
+        1 - somar
+        2 - subtrair
+        3 - dividir
+        4 - Multiplicar`)
+
+        function calcular(operacao, numero1, numero2) {
+            switch (operacao) {
+                case "1":
+                    return numero1 + numero2
+                    break
+                case "2":
+                    return numero1 - numero2
+                    break
+                case "3":
+                    return numero1 * numero2
+                    break
+                case "4":
+                    return numero1 / numero2
+                    break
+                default:
+                    return "Opção inválida"
+                    break
+            }
+        }
+
+        const resultado = calcular(operacao, numero1, numero2)
+        alert("O resultado da operação é: " + resultado)
+    </script>
+
+</body>
+
+</html>

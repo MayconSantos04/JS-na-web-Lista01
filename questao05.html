@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+
+<body>
+
+    <script>
+
+        const bimestre01 = parseFloat(prompt("Digite a nota do primeiro 1° bimestre: "))
+        const bimestre02 = parseFloat(prompt("Digite a nota do primeiro 2° bimestre: "))
+        const bimestre03 = parseFloat(prompt("Digite a nota do primeiro 3° bimestre: "))
+        const bimestre04 = parseFloat(prompt("Digite a nota do primeiro 4° bimestre: "))
+
+        const calculaMedia = (n1, n2, n3, n4) => {
+            const resultado = (n1 + n2 + n3 + n4) / 4
+
+            return resultado
+        }
+
+        const resultadoMedia = calculaMedia(bimestre01, bimestre02, bimestre03, bimestre04)
+
+        if (resultadoMedia >= 7) {
+            alert(`A media é: ${resultadoMedia} Aluno aprovado!`)
+        } else if (resultadoMedia >= 7 && resultadoMedia <= 5) {
+            alert(`A media é: ${resultadoMedia} Aluno Recuperação!`)
+        } else {
+            alert(`A media é: ${resultadoMedia} Aluno Reprovado!`)
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
