@@ -10,12 +10,13 @@
 
 // }
 
-const notas = [10, 5, 6, 7, 8]
+// const notas = [10, 5, 6, 7, 8]
 
-let somaTotal = 0
+// let somaTotal = 0
 
-for (let nota of notas) {
-    somaTotal += nota
+// for (let nota of notas) {
+//     somaTotal += nota
 
-    alert(somaTotal)
-}
+//     alert(somaTotal)
+// }
+

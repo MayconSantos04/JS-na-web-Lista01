@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Map</title>
+</head>
+
+<body>
+
+    <script>
+
+        // const numeros = [65, 44, 12, 4]
+        // const newArr = numeros.map(minhaFuncao)
+
+        // function minhaFuncao(num) {
+        //     return num * 10;
+        // }
+
+        // alert(newArr)
+
+        // const nomes = ["Jonas", "João", "Marcos", "Marcos"]
+
+        // function nomesMaiusculos(nome) {
+        //     return nome(nomes.toUpparcase())
+        // }
+
+        // const maiusculos = nomes.map(nomesMaiusculos)
+
+        // alert(maiusculos)
+
+        const nomes = ["Jonas", "João", "Marcos", "Marcos"];
+
+        function nomesMaiusculos(nome) {
+            return nome.toUpperCase();
+        }
+
+        const maiusculos = nomes.map(nomesMaiusculos);
+
+        alert(maiusculos);
+
+
+
+
+    </script>
+
+</body>
+
+</html>
