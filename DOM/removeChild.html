@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método RemoveChild()</title>
+</head>
+
+<body>
+
+    <ul id="lista">
+        <li id="remover1">Item1 que será removido</li>
+        <li id="remover2">Item2 que será removido</li>
+        <li id="remover3">Item3 que será removido</li>
+        <li id="remover4">Item4 que será removido</li>
+    </ul>
+
+    <script>
+
+        // const lista = document.getElementById("lista");
+        // const itemAserRemovido = document.getElementById("remover1");
+        // lista.removeChild(remover1);
+        // lista.removeChild(document.getElementById("remover2"));
+
+        // const listas = document.getElementById("lista");
+        // const lista = document.getElementById("listas");
+        // // listas.forEach((lista) => (lista.removeChild))
+        // listas.removeChild(lista.forEach(lista => {
+        //     removeChild(lista)
+        // }));
+
+        const lista = document.getElementById("lista")
+        const listas = document.getElementById("lista");
+
+        const itens = document.querySelectorAll("li")
+
+        itens.forEach((element) => {
+            lista.removeChild(element)
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

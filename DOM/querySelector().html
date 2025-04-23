@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método querySelector</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Conteúdo conteiner</p>
+    </div>
+
+    <p class="mensagem">Texto Aqui</p>
+
+    <script>
+
+        const p = document.querySelector(".mensagem");
+        p.innerHTML = "Texto Alterado com querySelector!"
+
+        const conteudo = document.querySelector(".container p");
+
+        // se usar querySelectorAll tudo que estiver definido servirá a todos
+
+        conteudo.style.backgroundColor = "red"
+
+        const paragrafos = document.querySelectorAll("p")
+
+        alert(paragrafos.lenght)
+
+    </script>
+
+</body>
+
+</html>
