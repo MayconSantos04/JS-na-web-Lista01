@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade01-DOM</title>
+    <style>
+        img {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Desafio!</h1>
+    <h3>Clique para acender ou apagar a lâmpada!</h3>
+
+    <img id="lampada"
+        src="https://img.freepik.com/vetores-gratis/lampada-realistica-isolada-de-vetor-sobre-branco_1284-41931.jpg">
+
+    <button id="btn">Acender/Apagar</button>
+
+    <script>
+        const img = document.querySelector('#lampada')
+        const btn = document.querySelector('#btn')
+
+        const apagada = "https://img.freepik.com/vetores-gratis/lampada-realistica-isolada-de-vetor-sobre-branco_1284-41931.jpg";
+        const acesa = "https://img.myloview.com.br/fotomurais/lampada-acesa-luz-700-1109866.jpg";
+
+        btn.addEventListener('click', () => {
+            if (img.getAttribute("src") === apagada) {
+                img.setAttribute("src", acesa)
+            } else {
+                img.setAttribute("src", apagada)
+            }
+        })
+    </script>
+
+</body>
+
+</html>
